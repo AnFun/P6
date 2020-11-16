@@ -26,7 +26,8 @@ public class SMBCamera : MonoBehaviour {
 	public float cameraSpeed = 5.0f;
 
 	void Awake() {
-
+		QualitySettings.vSyncCount = 0;
+		Application.targetFrameRate = 60;
 		_camera = GetComponent<Camera> ();
 	}
 
